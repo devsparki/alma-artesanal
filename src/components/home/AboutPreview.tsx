@@ -41,7 +41,7 @@ export function AboutPreview({ artisanImage }: AboutPreviewProps) {
             </div>
 
             <p className="font-body text-muted-foreground leading-relaxed">
-              Há mais de 20 anos, transformamos matérias-primas em obras de arte únicas. 
+              Há mais de 5 anos, transformamos matérias-primas em obras de arte únicas. 
               Cada peça carrega um pedaço da nossa história, das nossas raízes e do 
               amor pelo artesanato brasileiro. Trabalhamos com técnicas tradicionais, 
               honrando a sabedoria dos que vieram antes de nós.

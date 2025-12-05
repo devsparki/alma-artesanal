@@ -28,10 +28,10 @@ const Portfolio = () => {
     ? products 
     : products.filter(p => p.category === activeCategory);
 
-  const handleOrder = (productName: string) => {
-    const message = encodeURIComponent(`Olá! Gostaria de encomendar: ${productName}`);
-    window.open(`https://api.whatsapp.com/send/?phone=554991572719&text&type=phone_number&app_absent=0?text=${message}`, '_blank');
-  };
+ const handleOrder = (productName: string) => {
+  const message = encodeURIComponent(`Olá! Gostaria de encomendar: ${productName}`);
+  window.open(`https://wa.me/554991572719?text=${message}`, "_blank");
+};
 
   return (
     <Layout>

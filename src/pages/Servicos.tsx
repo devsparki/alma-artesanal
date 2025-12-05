@@ -60,8 +60,11 @@ const Servicos = () => {
       `Nova solicitação de encomenda:\n\nNome: ${formData.name}\nEmail: ${formData.email}\nTelefone: ${formData.phone}\nTipo: ${formData.productType}\nDescrição: ${formData.description}\nPrazo: ${formData.deadline}`
     );
     
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
-    
+    window.open(
+  `https://api.whatsapp.com/send?phone=554991572719&text=${message}`,
+  "_blank"
+);
+
     toast({
       title: "Solicitação enviada!",
       description: "Você será redirecionado para o WhatsApp.",
@@ -167,7 +170,7 @@ const Servicos = () => {
                   id="phone"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="(11) 99999-9999"
+                  placeholder="(49) 9157-2719"
                   required
                   className="bg-background"
                 />

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Mail, Heart } from "lucide-react";
+import { Instagram, Mail, Heart, ShoppingBag } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -57,17 +57,19 @@ export function Footer() {
               >
                 <Instagram size={18} />
               </a>
+
               <a
-                href="https://facebook.com"
+                href="https://shopee.com.br/shop/751195034?fbclid=PAb21jcAOgRxhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAafwSJ8W3zFVUcMaLe5c8-i8hWuUxiGhn6snNYMyvgO2msrr1HRml3ed46Yjfw_aem_kXMy_cau4j--09a10LL21w&tab=shop&utm_content=link_in_bio&utm_medium=social&utm_source=ig"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="Facebook"
+                aria-label="Shopee"
               >
-                <Facebook size={18} />
+                <ShoppingBag size={18} />
               </a>
+
               <a
-                href="mailto:contato@maosdearte.com"
+                href="mailto:vimedecore@gmail.com"
                 className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Email"
               >
