@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Artisanal Color Palette */
+    --background: 35 30% 96%;
+    --foreground: 25 25% 15%;
+
+    --card: 35 25% 94%;
+    --card-foreground: 25 25% 15%;
+
+    --popover: 35 30% 96%;
+    --popover-foreground: 25 25% 15%;
+
+    /* Terracotta Primary */
+    --primary: 15 55% 50%;
+    --primary-foreground: 35 30% 96%;
+
+    /* Cream Secondary */
+    --secondary: 35 25% 90%;
+    --secondary-foreground: 25 25% 20%;
+
+    /* Olive Accent */
+    --accent: 85 25% 45%;
+    --accent-foreground: 35 30% 96%;
+
+    --muted: 35 20% 88%;
+    --muted-foreground: 25 15% 45%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 35 30% 96%;
+
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 15 55% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom Design Tokens */
+    --terracotta: 15 55% 50%;
+    --terracotta-light: 15 45% 65%;
+    --terracotta-dark: 15 60% 35%;
+    --cream: 35 30% 96%;
+    --cream-dark: 35 25% 90%;
+    --olive: 85 25% 45%;
+    --olive-light: 85 20% 60%;
+    --brown-dark: 25 30% 18%;
+    --brown-medium: 25 20% 35%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(35 30% 96%) 0%, hsl(35 25% 90%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(35 25% 94%) 0%, hsl(35 20% 92%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(15 55% 50%) 0%, hsl(15 60% 40%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 25% 15% / 0.08);
+    --shadow-medium: 0 8px 30px -8px hsl(25 25% 15% / 0.12);
+    --shadow-elevated: 0 16px 50px -12px hsl(25 25% 15% / 0.15);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --sidebar-background: 35 30% 96%;
+    --sidebar-foreground: 25 25% 15%;
+    --sidebar-primary: 15 55% 50%;
+    --sidebar-primary-foreground: 35 30% 96%;
+    --sidebar-accent: 35 25% 90%;
+    --sidebar-accent-foreground: 25 25% 15%;
+    --sidebar-border: 30 20% 85%;
+    --sidebar-ring: 15 55% 50%;
+  }
+
+  .dark {
+    --background: 25 25% 10%;
+    --foreground: 35 25% 92%;
+
+    --card: 25 20% 14%;
+    --card-foreground: 35 25% 92%;
+
+    --popover: 25 25% 10%;
+    --popover-foreground: 35 25% 92%;
+
+    --primary: 15 50% 55%;
+    --primary-foreground: 25 25% 10%;
+
+    --secondary: 25 20% 18%;
+    --secondary-foreground: 35 25% 92%;
+
+    --accent: 85 20% 50%;
+    --accent-foreground: 25 25% 10%;
+
+    --muted: 25 15% 20%;
+    --muted-foreground: 35 15% 60%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 35 25% 92%;
+
+    --border: 25 15% 22%;
+    --input: 25 15% 22%;
+    --ring: 15 50% 55%;
+
+    --sidebar-background: 25 25% 10%;
+    --sidebar-foreground: 35 25% 92%;
+    --sidebar-primary: 15 50% 55%;
+    --sidebar-primary-foreground: 25 25% 10%;
+    --sidebar-accent: 25 20% 18%;
+    --sidebar-accent-foreground: 35 25% 92%;
+    --sidebar-border: 25 15% 22%;
+    --sidebar-ring: 15 50% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .card-artisan {
+    @apply bg-card rounded-lg shadow-[var(--shadow-soft)] transition-[var(--transition-smooth)] hover:shadow-[var(--shadow-medium)];
+  }
+
+  .btn-artisan {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-md transition-[var(--transition-smooth)] hover:opacity-90 hover:shadow-[var(--shadow-medium)];
+  }
+
+  .btn-outline-artisan {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-medium rounded-md transition-[var(--transition-smooth)] hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .link-underline {
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+
+  .image-frame {
+    @apply rounded-lg overflow-hidden shadow-[var(--shadow-soft)];
+  }
+
+  .texture-paper {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
