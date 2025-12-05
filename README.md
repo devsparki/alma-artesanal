@@ -1,6 +1,6 @@
 # 🌿 Vime Decore
 
-**Alma Artesanal** é um site moderno, elegante e completamente responsivo desenvolvido para apresentar produtos artesanais com destaque, carinho e autenticidade.  
+**Vime Decore** é um site moderno, elegante e completamente responsivo desenvolvido para apresentar produtos artesanais com destaque, carinho e autenticidade.  
 O projeto foi construído utilizando **React + Vite + TypeScript**, com estilização em **TailwindCSS** e hospedagem automática na **Vercel**.
 
 ---
