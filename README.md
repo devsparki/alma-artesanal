@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# 🌿 Vime Decore
 
-## Project info
+**Vime Decore** é um site moderno, elegante e completamente responsivo desenvolvido para apresentar produtos artesanais com destaque, carinho e autenticidade.  
+O projeto foi construído utilizando **React + Vite + TypeScript**, com estilização em **TailwindCSS** e hospedagem automática na **Vercel**.
 
-**URL**: https://lovable.dev/projects/7f7bdf21-cf44-4b1b-a671-15e7ecab9e96
+---
 
-## How can I edit this code?
+## ✨ Funcionalidades
 
-There are several ways of editing your application.
+- 🛍️ **Catálogo de produtos** com imagens e descrições
+- 📱 **Integração com WhatsApp** para contato rápido
+- 🎨 Design minimalista e amigável
+- ⚡ Carregamento rápido graças ao Vite
+- 🧭 Navegação completa com páginas:
+  - Home
+  - Sobre
+  - Portfólio
+  - Serviços
+  - Contato
+- 🧩 Componentes reutilizáveis e organizados
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7f7bdf21-cf44-4b1b-a671-15e7ecab9e96) and start prompting.
+## 🖼️ Estrutura de Pastas
 
-Changes made via Lovable will be committed automatically to this repo.
+src/
+├── assets/ # Imagens e mídias
+├── components/ # Componentes reutilizáveis
+│ ├── home/ # Seções da página inicial
+│ ├── layout/ # Header, Footer, Layout e WhatsAppButton
+│ └── ui/ # Componentes visuais gerais
+├── pages/ # Páginas do site
+├── hooks/ # Hooks personalizados
+├── lib/ # Utilidades e helpers
+├── App.tsx # Componente principal
+└── index.css # Estilos globais
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Como Rodar o Projeto Localmente
 
-Follow these steps:
+### 1. Clonar o repositório
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+git clone https://github.com/devsparki/alma-artesanal.git
+cd alma-artesanal
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7f7bdf21-cf44-4b1b-a671-15e7ecab9e96) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

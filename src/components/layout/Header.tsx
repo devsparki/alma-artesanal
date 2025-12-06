@@ -22,7 +22,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <span className="font-display text-xl sm:text-2xl font-semibold text-foreground">
-              Vimedecore <span className="text-primary">é Arte</span>
+              Vime Decore <span className="text-primary">é Arte</span>
             </span>
           </Link>
 
