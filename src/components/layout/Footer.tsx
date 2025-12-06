@@ -11,7 +11,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="font-display text-xl font-semibold text-foreground">
-              Vimedecore <span className="text-primary">é Arte</span>
+              Vime Decore <span className="text-primary">é Arte</span>
             </h3>
             <p className="font-body text-muted-foreground text-sm leading-relaxed">
               Arte feita à mão com alma e dedicação. Cada peça é única, carregando a história e o carinho de quem a criou.
