@@ -13,9 +13,9 @@ import productCeramic from "@/assets/product-ceramic.jpg";
 const featuredProducts = [
   {
     id: 1,
-    name: "Tigela Rústica em Madeira",
+    name: "Kit especial 10 Cestas Clássicas Média",
     category: "Madeira",
-    price: "R$ 180,00",
+    price: "R$ 120,00",
     image: productWood,
   },
   {

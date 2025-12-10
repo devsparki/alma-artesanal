@@ -13,12 +13,12 @@ import productAlls from  "@/assets/product-alls.jpg";
 const categories = ["Todos", "Madeira", "Crochê", "Cerâmica", "Couro"];
 
 const products = [
-  { id: 1, name: "Tigela Rústica", category: "Madeira", price: "R$ 180,00", image: productWood, description: "Tigela esculpida à mão em madeira maciça" },
-  { id: 2, name: "Manta Artesanal", category: "Crochê", price: "R$ 320,00", image: productCrochet, description: "Manta em crochê com padrão tradicional" },
-  { id: 3, name: "Vaso Decorativo", category: "Cerâmica", price: "R$ 250,00", image: productCeramic, description: "Vaso pintado à mão com motivos regionais" },
-  { id: 4, name: "Bandeja de Servir", category: "Madeira", price: "R$ 220,00", image: productAlls, description: "Bandeja torneada em madeira de lei" },
-  { id: 5, name: "Toalha de Mesa", category: "Crochê", price: "R$ 450,00", image: productCoroa, description: "Toalha com detalhes em renda" },
-  { id: 6, name: "Conjunto de Xícaras", category: "Cerâmica", price: "R$ 180,00", image: productLuz, description: "Conjunto de 4 xícaras com pires" },
+  { id: 1, name: "Kit especial 10 Cestas Clássicas Média", category: "Madeira", price: "R$ 120,00", image: productWood, description: "Kit ideal para arranjos, decoração e organização, feito artesanalmente em vime natural." },
+  { id: 2, name: "Cesta Clássica Pequena em Vime Natural", category: "Madeira", price: "R$ 12,00", image: productCrochet, description: "Cesta leve e resistente, perfeita para lembrancinhas, decoração e pequenos arranjos." },
+  { id: 3, name: "50 hastes de vime enrolado para arranjos / Rococó", category: "Madeira", price: "R$ 19,30 - 30,90", image: productCeramic, description: "Hastes artesanais ideais para artesanato, arranjos florais e detalhes decorativos." },
+  { id: 4, name: "Palha de Pinus para embalagens Pacote com 40g.", category: "Madeira", price: "R$ 19,00", image: productAlls, description: "Palha natural utilizada para preencher cestas, kits e embalagens decorativas." },
+  { id: 5, name: "Vaso / Tina / Balde em Madeira para Decoração", category: "Madeira", price: "R$ 24,90 - 31,90", image: productCoroa, description: "Peça rústica e versátil para compor decorações, arranjos ou ambientes temáticos." },
+  { id: 6, name: "Kit com 3 Vasos / Cestas quadradas em Vime Natural", category: "Madeira", price: "R$ 17,90", image: productLuz, description: "Conjunto artesanal ideal para organização, decoração e uso em ambientes naturais." }
 ];
 
 const Portfolio = () => {
